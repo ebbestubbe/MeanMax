@@ -1,0 +1,51 @@
+using System;
+using System.Linq;
+using System.IO;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Player
+{
+    static void Main(string[] args)
+    {
+
+        // game loop
+        while (true)
+        {
+            int myScore = int.Parse(Console.ReadLine());
+            int enemyScore1 = int.Parse(Console.ReadLine());
+            int enemyScore2 = int.Parse(Console.ReadLine());
+            int myRage = int.Parse(Console.ReadLine());
+            int enemyRage1 = int.Parse(Console.ReadLine());
+            int enemyRage2 = int.Parse(Console.ReadLine());
+            int unitCount = int.Parse(Console.ReadLine());
+            for (int i = 0; i < unitCount; i++)
+            {
+                string[] inputs = Console.ReadLine().Split(' ');
+                int unitId = int.Parse(inputs[0]);
+                int unitType = int.Parse(inputs[1]);
+                int player = int.Parse(inputs[2]);
+                float mass = float.Parse(inputs[3]);
+                int radius = int.Parse(inputs[4]);
+                int x = int.Parse(inputs[5]);
+                int y = int.Parse(inputs[6]);
+                int vx = int.Parse(inputs[7]);
+                int vy = int.Parse(inputs[8]);
+                int extra = int.Parse(inputs[9]);
+                int extra2 = int.Parse(inputs[10]);
+            }
+
+            // Write an action using Console.WriteLine()
+            // To debug: Console.Error.WriteLine("Debug messages...");
+
+            Console.WriteLine("WAIT");
+            Console.WriteLine("WAIT");
+            Console.WriteLine("WAIT");
+        }
+    }
+}
